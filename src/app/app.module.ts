@@ -9,6 +9,7 @@ import { YarnTypesComponent } from './yarn-types/yarn-types.component';
 import { YarnDetailComponent } from './yarn-types/yarn-detail/yarn-detail.component';
 import { NewsletterFormComponent } from './newsletter-form/newsletter-form.component';
 import { LocationsComponent } from './locations/locations.component';
+import { StitchCounterComponent } from './stitch-counter/stitch-counter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LocationsComponent } from './locations/locations.component';
     YarnTypesComponent,
     YarnDetailComponent,
     NewsletterFormComponent,
-    LocationsComponent
+    LocationsComponent,
+    StitchCounterComponent
   ],
   imports: [
     BrowserModule
