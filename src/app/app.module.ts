@@ -13,6 +13,8 @@ import { NewsletterFormComponent } from './newsletter-form/newsletter-form.compo
 import { LocationsComponent } from './locations/locations.component';
 import { StitchCounterComponent } from './stitch-counter/stitch-counter.component';
 import { HomeComponent } from './home/home.component';
+import { StitchListComponent } from './stitches/stitch-list/stitch-list.component';
+import { StitchTypeComponent } from './stitches/stitch-type/stitch-type.component';
 
 
 
@@ -36,7 +38,9 @@ const appRoutes: Routes = [
     NewsletterFormComponent,
     LocationsComponent,
     StitchCounterComponent,
-    HomeComponent
+    HomeComponent,
+    StitchListComponent,
+    StitchTypeComponent
   ],
   imports: [
     BrowserModule,
