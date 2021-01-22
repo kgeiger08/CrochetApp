@@ -18,7 +18,6 @@ import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
   { path: 'stitches', component: StitchesComponent },
   { path: 'stitch-counter', component: StitchCounterComponent },
   { path: 'yarn-types', component: YarnTypesComponent },
