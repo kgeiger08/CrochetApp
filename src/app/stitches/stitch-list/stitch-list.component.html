@@ -1,1 +1,3 @@
-<app-stitch-type></app-stitch-type>
+<div class="row">
+        <app-stitch-type *ngFor="let stitchType of stitchesArray; let i = index" [stitch]="stitchType" [index]="i"></app-stitch-type>
+</div>

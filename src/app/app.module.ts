@@ -15,6 +15,7 @@ import { StitchCounterComponent } from './stitch-counter/stitch-counter.componen
 import { HomeComponent } from './home/home.component';
 import { StitchListComponent } from './stitches/stitch-list/stitch-list.component';
 import { StitchTypeComponent } from './stitches/stitch-type/stitch-type.component';
+import { StitchService } from './stitches/stitch.service';
 
 
 
@@ -47,7 +48,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [StitchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
