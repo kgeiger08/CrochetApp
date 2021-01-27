@@ -1,1 +1,23 @@
-<p>newsletter-form works!</p>
+<div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offser-2">
+        <form class="form-horizontal" (ngSubmit)="onSignupSubmitted(form)" #form="ngForm">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="Name" ngModel name="name" required #name="ngModel">
+                    <span class="help-block" *ngIf="!name.valid && name.touched">Please enter a name!</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Email" ngModel name="email" required email #email="ngModel">
+                    <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Sign-up</button>
+        </form>
+    </div>
+</div>
+
+
