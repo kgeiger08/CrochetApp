@@ -1,1 +1,26 @@
-<p>stitch-counter works!</p>
+
+    <h2>Stitch/Row Counter</h2>
+    <p>Click with mouse or spacebar!</p>
+    <div class="row">
+            <div class="col-xs-4">
+                <button class="btn btn-info" (click)="stitchCounter()"> Click to Activate Stitch Counter</button>
+            </div>
+            <div class="col-xs-4">
+                <p class="stitchCountNum"> Stitches: {{ stitchCount }}</p>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default" (click)="onClearStitchCounter()">Clear</button>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <button class="btn btn-success" (click)="rowCounter()">Click to Activate Rows Counter</button>
+        </div>
+        <div class="col-xs-4">
+            <p class="stitchCountNum"> Row Count: {{ rowCount }}</p>
+        </div>
+        <div class="col-xs-4">
+            <button class="btn btn-default" (click)="onClearRowCounter()">Clear</button>
+        </div>
+    </div>
