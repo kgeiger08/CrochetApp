@@ -1,6 +1,6 @@
 
     <h2>Stitch/Row Counter</h2>
-    <p>Click with mouse or spacebar!</p>
+    <p>Once you activate the button, you can count with a mouse click or spacebar!</p>
     <div class="row">
             <div class="col-xs-4">
                 <button class="btn btn-info" (click)="stitchCounter()"> Click to Activate Stitch Counter</button>
@@ -18,7 +18,7 @@
             <button class="btn btn-success" (click)="rowCounter()">Click to Activate Row Counter</button>
         </div>
         <div class="col-xs-4">
-            <p class="stitchCountNum"> Row Count: {{ rowCount }}</p>
+            <p class="stitchCountNum"> Rows: {{ rowCount }}</p>
         </div>
         <div class="col-xs-4">
             <button class="btn btn-default" (click)="onClearRowCounter()">Clear</button>
