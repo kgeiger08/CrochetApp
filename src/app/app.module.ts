@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { StitchListComponent } from './stitches/stitch-list/stitch-list.component';
 import { StitchTypeComponent } from './stitches/stitch-type/stitch-type.component';
 import { StitchService } from './stitches/stitch.service';
+import { StitchDetailService } from './stitches/stitch-detail.service';
 
 
 
@@ -49,7 +50,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [StitchService],
+  providers: [StitchService, StitchDetailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

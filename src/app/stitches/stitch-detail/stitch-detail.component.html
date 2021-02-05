@@ -1,5 +1,8 @@
 <div class="row">
-    <h2>{{ stitchType[0].name }}</h2>
-    <!-- <span><img [src]="stitchType.stitchImg" alt="{{ stitchType.name }}" class="img-responsive"></span> -->
-    <p>Stitch Description/Detail</p>
+    <div class="col-xs-12">
+        <h2 class="text-center">{{ stitchTypeDetail.name}}</h2>
+        <span><img [src]="stitchTypeDetail.imagePath" alt="{{ stitchTypeDetail.name }}" class="img-responsive"></span>
+        <p>{{ stitchTypeDetail.description}}</p>
+    </div>
 </div>
+
