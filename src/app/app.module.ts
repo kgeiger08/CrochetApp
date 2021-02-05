@@ -22,6 +22,7 @@ import { StitchService } from './stitches/stitch.service';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'stitches', component: StitchesComponent },
+  { path: 'stitches/:id', component: StitchDetailComponent },
   { path: 'stitch-counter', component: StitchCounterComponent },
   { path: 'yarn-types', component: YarnTypesComponent },
   { path: 'locations', component: LocationsComponent },
