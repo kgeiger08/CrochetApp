@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 // import { GoogleMap } from '@angular/google-maps';
 // import { } from 'googlemaps';
 
@@ -14,10 +14,11 @@ export class LocationsComponent implements OnInit {
   // longitude: any = 90.1994;
 
 
-
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {   
+      
+    
 //     const mapProperties = {
 //       center: new google.maps.LatLng(35.2271, -80.8431),
 //       zoom: 15,
