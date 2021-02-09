@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 import { AppComponent } from './app.component';
 import { HeaderNavbarComponent } from './header-navbar/header-navbar.component';
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    GoogleMapsModule
   ],
   providers: [StitchService, StitchDetailService],
   bootstrap: [AppComponent]
