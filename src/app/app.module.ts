@@ -19,6 +19,7 @@ import { StitchTypeComponent } from './stitches/stitch-type/stitch-type.componen
 import { StitchService } from './stitches/stitch.service';
 import { StitchDetailService } from './stitches/stitch-detail.service';
 import { VisualInspirationComponent } from './visual-inspiration/visual-inspiration.component';
+import { FetchImageService } from './visual-inspiration/fetchImage.service';
 
 
 
@@ -54,7 +55,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     GoogleMapsModule
   ],
-  providers: [StitchService, StitchDetailService],
+  providers: [StitchService, StitchDetailService, FetchImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
