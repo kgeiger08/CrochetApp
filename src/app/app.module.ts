@@ -18,6 +18,7 @@ import { StitchListComponent } from './stitches/stitch-list/stitch-list.componen
 import { StitchTypeComponent } from './stitches/stitch-type/stitch-type.component';
 import { StitchService } from './stitches/stitch.service';
 import { StitchDetailService } from './stitches/stitch-detail.service';
+import { VisualInspirationComponent } from './visual-inspiration/visual-inspiration.component';
 
 
 
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
   { path: 'stitches/:id', component: StitchDetailComponent },
   { path: 'stitch-counter', component: StitchCounterComponent },
   { path: 'yarn-types', component: YarnTypesComponent },
-  { path: 'locations', component: LocationsComponent },
+  { path: 'visual-inspiration', component: VisualInspirationComponent },
   { path: 'newsletter-signup', component: NewsletterFormComponent }
 ];
 
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     StitchCounterComponent,
     HomeComponent,
     StitchListComponent,
-    StitchTypeComponent
+    StitchTypeComponent,
+    VisualInspirationComponent
   ],
   imports: [
     BrowserModule,
