@@ -10,3 +10,22 @@ h2 {
     font-family: 'Gill Sans';
 }
 
+p {
+    font-family: 'Gill Sans';
+    font-size: 18px;
+}
+
+label {
+    font-family: 'Gill Sans';
+}
+
+button {
+    font-family: 'Gill Sans';
+    font-size: 18px;
+}
+
+img.img-responsive.img-rounded {
+    height: auto;
+    width: auto;
+
+}
