@@ -20,6 +20,9 @@ import { StitchService } from './stitches/stitch.service';
 import { StitchDetailService } from './stitches/stitch-detail.service';
 import { VisualInspirationComponent } from './visual-inspiration/visual-inspiration.component';
 import { FetchImageService } from './visual-inspiration/fetchImage.service';
+import { TypeOfYarnComponent } from './yarn-types/type-of-yarn/type-of-yarn.component';
+import { YarnListComponent } from './yarn-types/yarn-list/yarn-list.component';
+import { YarnService } from './yarn-types/yarn.service';
 
 
 
@@ -47,7 +50,9 @@ const appRoutes: Routes = [
     HomeComponent,
     StitchListComponent,
     StitchTypeComponent,
-    VisualInspirationComponent
+    VisualInspirationComponent,
+    TypeOfYarnComponent,
+    YarnListComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     GoogleMapsModule
   ],
-  providers: [StitchService, StitchDetailService, FetchImageService],
+  providers: [StitchService, StitchDetailService, FetchImageService, YarnService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
