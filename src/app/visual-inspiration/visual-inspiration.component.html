@@ -1,0 +1,15 @@
+<div>
+    <div class="row">
+        <h2 class="text-center">Welcome to Visual Inspiration!</h2>
+        <p class="text-center">Click the button to randomly find an inspiring photo that can help jump start your creative thinking with color, patterns, and designs! Keep clicking to find more inspiration!</p>
+    </div>
+
+    <div class="row" >
+        <div class="col-xs-12">
+            <button class="btn btn-success btn-lg btn-block" (click)="displayImage()" type="button">Be Inspired!</button>
+        </div>
+    </div>
+
+    <img *ngIf="showImage" src="{{ image }}" alt="Crochet Image" class="img-responsive">
+    
+</div>

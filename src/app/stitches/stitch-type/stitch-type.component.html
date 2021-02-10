@@ -1,0 +1,7 @@
+<div class="col-xs-4">
+    <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active"> 
+        <span><img [src]="stitch.imagePath" alt="{{ stitch.name }}" class="img-responsive img-thumbnail"></span>
+        <h5 class="text-center">{{ stitch.name | uppercase }}</h5>
+        <p class="text-center">{{ stitch.description }}</p>  
+    </a>
+</div>

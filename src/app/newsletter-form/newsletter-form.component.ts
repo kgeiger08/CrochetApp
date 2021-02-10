@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-newsletter-form',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./newsletter-form.component.css']
 })
 export class NewsletterFormComponent implements OnInit {
+  signedUp: string;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSignupSubmitted(form: NgForm) {
+    console.log(form);
+    this.signedUp = 'You have successfully signed up!'
+    form.reset();
   }
 
 }
