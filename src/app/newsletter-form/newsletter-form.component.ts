@@ -16,7 +16,7 @@ export class NewsletterFormComponent implements OnInit {
 
   onSignupSubmitted(form: NgForm) {
     console.log(form);
-    this.signedUp = 'You have successfully signed up today!'
+    this.signedUp = 'You have successfully signed up!'
     form.reset();
   }
 
