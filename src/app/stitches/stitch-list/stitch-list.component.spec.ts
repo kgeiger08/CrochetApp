@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { StitchService } from '../stitch.service';
 
 import { StitchListComponent } from './stitch-list.component';
 
@@ -22,4 +23,11 @@ describe('StitchListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it("should use the stitchesArray from the service", () => {
+  //   const stitchService = fixture.debugElement.injector.get(StitchService);
+  //   fixture.detectChanges();
+  //   expect(stitchService.displayStitches()).toEqual(component.stitchesArray);
+  // });
+
 });
